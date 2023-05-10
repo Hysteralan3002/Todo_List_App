@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+
+  text-transform: capitalize;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(43deg, #655dbb, #ffff);
+}
+.container {
+  height: 450px;
+  width: 330px;
+  background: #ecf2ff;
+
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  overflow-y: auto;
+}
+#input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #655dbb;
+  color: #fff;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+#input::placeholder {
+  color: #f6f1f1;
+}
+ul li {
+  background: #ecf2ff;
+  color: black;
+  height: 40px;
+  border-radius: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+}
+ul .fa-check-circle,
+.fa-trash {
+  position: absolute;
+  cursor: pointer;
+}
+ul .fa-check-circle {
+  right: 40px;
+  color: #3e54ac;
+  font-size: 20px;
+}
+ul .fa-trash {
+  right: 17px;
+  font-size: 20px;
+  color: #ff0033;
+}
+ul .checked {
+  background: #bface2;
+  text-decoration: line-through;
+  transition: 0.2s;
+}
